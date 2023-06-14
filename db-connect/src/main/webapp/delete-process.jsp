@@ -9,12 +9,9 @@
 	String pUserId = request.getParameter("userId");
 	String pUserPw = request.getParameter("userPw");
 	
-	
-	
-	
 	String driver = "oracle.jdbc.OracleDriver";
 	String url = "jdbc:oracle:thin:@localhost:1521:xe";
-	String id = "jjang051";
+	String id = "Zero";
 	String pw = "1234";
 	
 	Connection conn = null;

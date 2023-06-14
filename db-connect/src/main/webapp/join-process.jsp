@@ -16,7 +16,7 @@ String pDetailAddress = request.getParameter("detailAddress");
 String pExtraAddress = request.getParameter("extraAddress"); 
 String driver = "oracle.jdbc.OracleDriver"; 
 String url = "jdbc:oracle:thin:@localhost:1521:xe"; 
-String id = "jjang051"; 
+String id = "Zero"; 
 String pw = "1234"; 
 Connection conn = null; 
 PreparedStatement pstmt = null;
@@ -33,6 +33,9 @@ pstmt.setInt(5, pZonecode);
 pstmt.setString(6, pUserAddress); 
 pstmt.setString(7, pDetailAddress); 
 pstmt.setString(8, pExtraAddress); 
-int result = pstmt.executeUpdate(); // select 를 제외한 나머지 update, delete , insert if(result > 0) { response.sendRedirect("login-form.jsp"); } else {
-out.println(
-		"<script>alert('서버오류입니다. 잠시뒤에 다시 시도해 주세요.');history.back();</script>"); %>
+int result = pstmt.executeUpdate(); // select 를 제외한 나머지 update, delete , 
+if(result > 0) { response.sendRedirect("login-form.jsp");
+} else {
+out.println("<script>alert('서버오류입니다. 잠시뒤에 다시 시도해 주세요.');history.back();</script>");
+}
+%>

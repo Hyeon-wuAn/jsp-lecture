@@ -1,4 +1,4 @@
-<%@page import="com.jjang051.utils.ScriptWriter"%>
+<%@page import="com.Zero.utils.ScriptWriter"%>
 <%@page import="java.sql.DriverManager"%>
 <%@page import="java.sql.ResultSet"%>
 <%@page import="java.sql.PreparedStatement"%>

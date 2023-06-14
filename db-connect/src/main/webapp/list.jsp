@@ -1,4 +1,4 @@
-<%@page import="com.jjang051.dto.BoardDto"%>
+<%@page import="com.Zero.dto.BoardDto"%>
 <%@page import="java.util.ArrayList"%>
 <%@page import="java.sql.DriverManager"%>
 <%@page import="java.sql.ResultSet"%>
@@ -9,7 +9,7 @@
 <%
 	String driver = "oracle.jdbc.OracleDriver"; 
 	String url = "jdbc:oracle:thin:@localhost:1521:xe"; 
-	String id = "jjang051"; 
+	String id = "Zero"; 
 	String pw = "1234"; 
 	Connection conn = null; 
 	PreparedStatement pstmt = null;
@@ -38,7 +38,7 @@
 			<li>
 				<span>1</span>
 				<span>제목</span>
-				<span>장성호</span>
+				<span>안현우</span>
 				<span>2023/06/09</span>
 				<span>0</span>
 			</li>
